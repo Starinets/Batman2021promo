@@ -1,11 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+
+  background: url("../img/main-bg.jpg") top center no-repeat,
+    url("../img/main-bg-cover.jpg") 0 0 repeat-x;
+  /* background-image: url("../img/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center; */
+
   background-color: #0a090a;
   color: #ffffff;
-
-  background-image: url(../img/main-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .container {
