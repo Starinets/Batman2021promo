@@ -12,6 +12,11 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -50,14 +55,19 @@
 
       <main class="main">
         <div class="pre-content-wrapper">
-          <h1 class="title">Бетман</h1>
-          <small class="title-en">The Batman</small>
+          <h1 class="title animated fadeInRight">Бетмен</h1>
+          <small class="title-en animated fadeInRight">The Batman</small>
 
-          <div class="info">
+          <div class="info animated fadeInUp delay-2s">
             <div class="movie-info">
               <span class="tag">Фильм</span>
               <span class="country">США, 2021 год</span>
-              <a class="play" href="#">Смотреть трейлер</a>
+              <a
+                data-fancybox
+                class="play"
+                href="https://www.youtube.com/watch?v=8SOyHktrjGE"
+                >Смотреть трейлер</a
+              >
             </div>
 
             <a class="more" href="#">Подробнее</a>
@@ -79,10 +89,10 @@
               <li class="actors-list-items">
                 <a href="#">Роберт Паттинсон</a>
               </li>
-              <li class="actors-list-items"><a href="#">Зои Кравиц</a></li>
               <li class="actors-list-items"><a href="#">Колин Фаррелл</a></li>
               <li class="actors-list-items"><a href="#">Питер Сарсгаард</a></li>
               <li class="actors-list-items"><a href="#">Пол Дано</a></li>
+              <li class="actors-list-items"><a href="#">Зои Кравиц</a></li>
               <li class="actors-list-items"><a href="#">Энди Серкис</a></li>
               <li class="actors-list-items"><a href="#">Джеффри Райт</a></li>
               <li class="actors-list-items"><a href="#">Джон Туртурро</a></li>
@@ -93,16 +103,30 @@
 
           <div class="full-info">
             <nav class="navigation">
-              <ul class="menu">
-                <li class="menu-item active-menu-item">
-                  <a>Описание</a>
+              <ul class="menu ">
+                <li class="menu-item">
+                  <a class="menu-item-link active-menu-item" href="#description"
+                    >Описание</a
+                  >
                 </li>
-                <li class="menu-item"><a href="#">Рецензии</a></li>
-                <li class="menu-item"><a href="#">Премьеры</a></li>
-                <li class="menu-item"><a href="#">Актеры</a></li>
-                <li class="menu-item"><a href="#">Награды</a></li>
-                <li class="menu-item"><a href="#">Факты</a></li>
-                <li class="menu-item"><a href="#">Сайты</a></li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#review">Рецензии</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#premiers">Премьеры</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#actors">Актеры</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#websites">Награды</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#awards">Факты</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-item-link" href="#facts">Сайты</a>
+                </li>
                 <li class="menu-item">
                   <a href="#">
                     <img
@@ -116,47 +140,156 @@
             </nav>
 
             <div class="full-content">
-              <div class="content-article">
-                <p>
-                  Предстоящий американский супергеройский фильм, основанный на
-                  одноимённых комиксах издательства DC Comics. Картина будет
-                  выпущена компанией Warner Bros. и будет перезагрузкой всех
-                  фильмов о Бэтмене.
-                </p>
-                <p>
-                  Фильм является десятым по счёту фильмом из Расширенной
-                  вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт
-                  Ривз, а главную роль исполнит Роберт Паттинсон
-                </p>
+              <div class="tabs-wrapper">
+                <div class="content-article visible" id="description">
+                  <p>
+                    Предстоящий американский супергеройский фильм, основанный на
+                    одноимённых комиксах издательства DC Comics. Картина будет
+                    выпущена компанией Warner Bros. и будет перезагрузкой всех
+                    фильмов о Бэтмене.
+                  </p>
+                  <p>
+                    Фильм является десятым по счёту фильмом из Расширенной
+                    вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт
+                    Ривз, а главную роль исполнит Роберт Паттинсон
+                  </p>
 
-                <h2>Разработка</h2>
+                  <h2>Разработка</h2>
 
-                <p>
-                  В октябре 2014 года студия Warner Bros. объявила, что в
-                  разработке находится сольный фильм о Бэтмене, роль которого
-                  вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что
-                  Аффлек ведёт переговоры со студией по поводу постановки фильма
-                  и совместного написания сценария с Джеффом Джонсом.
-                </p>
-                <p>
-                  После выхода фильма «Бэтмен против Супермена: На заре
-                  справедливости» руководитель агентства WME Патрик Уайтсел
-                  подтвердил, что Аффлек написал сценарий для сольного фильма о
-                  Бэтмене и в настоящий момент его рассматривают студия и DC. В
-                  мае 2016 года Джереми Айронс подтвердил, что он появится в
-                  фильме про Тёмного Рыцаря.
-                </p>
-                <p>
-                  На Comic-Con в Сан-Диего в июле 2016 года было официально
-                  подтверждено, что Аффлек станет режиссёром картины. В августе
-                  2016 года на одной из страниц Аффлека в социальных сетях был
-                  опубликован тестовый материал, в котором был показан персонаж
-                  Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что
-                  Джо Манганьелло сыграет наёмника Слейда Уилсона, который,
-                  возможно, станет главным злодеем фильма.
-                </p>
+                  <p>
+                    В октябре 2014 года студия Warner Bros. объявила, что в
+                    разработке находится сольный фильм о Бэтмене, роль которого
+                    вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что
+                    Аффлек ведёт переговоры со студией по поводу постановки
+                    фильма и совместного написания сценария с Джеффом Джонсом.
+                  </p>
+                  <p>
+                    После выхода фильма «Бэтмен против Супермена: На заре
+                    справедливости» руководитель агентства WME Патрик Уайтсел
+                    подтвердил, что Аффлек написал сценарий для сольного фильма
+                    о Бэтмене и в настоящий момент его рассматривают студия и
+                    DC. В мае 2016 года Джереми Айронс подтвердил, что он
+                    появится в фильме про Тёмного Рыцаря.
+                  </p>
+                  <p>
+                    На Comic-Con в Сан-Диего в июле 2016 года было официально
+                    подтверждено, что Аффлек станет режиссёром картины. В
+                    августе 2016 года на одной из страниц Аффлека в социальных
+                    сетях был опубликован тестовый материал, в котором был
+                    показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс
+                    подтвердил, что Джо Манганьелло сыграет наёмника Слейда
+                    Уилсона, который, возможно, станет главным злодеем фильма.
+                  </p>
+                </div>
+
+                <div class="content-article visible" id="review">
+                  <h2>Рецензии</h2>
+                  <p>Скоро здесь появятся рецензии</p>
+                </div>
+
+                <div class="content-article visible" id="premiers">
+                  <h2>Премьеры</h2>
+                  <ul>
+                    <li>24 июня 2021 <span>Аргентина</span></li>
+                    <li>24 июня 2021 <span>Россия</span></li>
+                    <li>24 июня 2021 <span>Словакия</span></li>
+                    <li>
+                      25 июня 2021 <span>Американские Виргинские острова</span>
+                    </li>
+                    <li>25 июня 2021 <span>Бельгия</span></li>
+                    <li>25 июня 2021 <span>Бразилия</span></li>
+                    <li>25 июня 2021 <span>Великобритания</span></li>
+                    <li>25 июня 2021 <span>Канада</span></li>
+                    <li>25 июня 2021 <span>Литва</span></li>
+                    <li>25 июня 2021 <span>Португалия</span></li>
+                    <li>25 июня 2021 <span>США</span></li>
+                  </ul>
+                </div>
+
+                <div class="content-article visible" id="actors">
+                  <h2>Актеры</h2>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor1.jpg"
+                      alt="Фото Роберт Патисон"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Роберт Патиссон</figcaption>
+                    <span>Брюс Уэйн / Бэтмен</span>
+                  </figure>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor2.jpg"
+                      alt="Фото Зои Кравиц"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Зои Кравиц</figcaption>
+                    <span>Селина Кайл</span>
+                  </figure>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor3.jpg"
+                      alt="Фото Пол Дано"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Пол Дано</figcaption>
+                    <span>Эдвард Нэштон</span>
+                  </figure>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor4.jpg"
+                      alt="Фото Джеффри Райт"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Джеффри Райт</figcaption>
+                    <span>Джеймс Гордон</span>
+                  </figure>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor5.jpg"
+                      alt="Фото Энди Сёркинс"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Энди Сёркинс</figcaption>
+                    <span>Альфред Пенниуорт</span>
+                  </figure>
+
+                  <figure class="actor">
+                    <img
+                      src="img/actor6.jpg"
+                      alt="Фото Джон Туртурро"
+                      width="175"
+                      height="198"
+                    />
+                    <figcaption>Джон Туртурро</figcaption>
+                    <span>Кармайн Фальконе</span>
+                  </figure>
+                </div>
+
+                <div class="content-article visible" id="websites">
+                  <h2>Websites</h2>
+                  <p></p>
+                </div>
+
+                <div class="content-article visible" id="awards">
+                  <h2>Награды</h2>
+                  <p></p>
+                </div>
+
+                <div class="content-article visible" id="facts">
+                  <h2>Факты о фильмк</h2>
+                </div>
               </div>
-
               <div class="content-aside">
                 <h2>Подпишитесь на обновления</h2>
                 <form class="form-subscibe" action="">
@@ -172,5 +305,9 @@
         </div>
       </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
