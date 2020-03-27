@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -32,7 +33,9 @@
 
         <div class="user">
           <img
-            src="img/bookmark-icon.svg"
+            src="img/bookmark.svg"
+            width="12"
+            height="17"
             alt="поставить закладку на страницу"
           />
           <img
@@ -46,17 +49,19 @@
       </header>
 
       <main class="main">
-        <h1 class="title">Бетмен</h1>
-        <small class="title-en">The Batman</small>
+        <div class="pre-content-wrapper">
+          <h1 class="title">Бетман</h1>
+          <small class="title-en">The Batman</small>
 
-        <div class="info">
-          <div class="movie-info">
-            <span class="tag">Фильм</span>
-            <span class="country">США, 2021 год</span>
-            <a class="play" href="#">Смотреть трейлер</a>
+          <div class="info">
+            <div class="movie-info">
+              <span class="tag">Фильм</span>
+              <span class="country">США, 2021 год</span>
+              <a class="play" href="#">Смотреть трейлер</a>
+            </div>
+
+            <a class="more" href="#">Подробнее</a>
           </div>
-
-          <a class="more" href="#">Подробнее</a>
         </div>
 
         <div class="content">
@@ -69,7 +74,7 @@
               height="260"
             />
             <button class="button">Буду смотреть</button>
-            <h2 class="actors-title">В главных родях:</h2>
+            <h2 class="actors-title">В главных ролях:</h2>
             <ul class="actors-list">
               <li class="actors-list-items">
                 <a href="#">Роберт Паттинсон</a>
@@ -154,7 +159,7 @@
 
               <div class="content-aside">
                 <h2>Подпишитесь на обновления</h2>
-                <form class="form-submit" action="">
+                <form class="form-subscibe" action="">
                   <input type="text" placeholder="Ваш Email" />
                   <button type="submit"></button>
                 </form>

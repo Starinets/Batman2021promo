@@ -17,6 +17,7 @@ body {
 .container {
   max-width: 1140px;
   margin: auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -49,11 +50,13 @@ body {
   font-size: 14px;
   line-height: 16px;
 
-  background-color: rgba(196, 196, 196, 0.5);
   padding: 12px 18px;
+
+  color: #aeaeae;
+  background-color: rgba(196, 196, 196, 0.5);
+
   border: none;
   border-radius: 5px;
-  color: #aeaeae;
 
   flex: 1;
 }
@@ -124,8 +127,8 @@ body {
   font-size: 16px;
   line-height: 19px;
 
-  background-color: #ffffff;
   color: #333333;
+  background-color: #ffffff;
 
   margin-right: 30px;
   padding: 5px 10px;
@@ -250,9 +253,6 @@ body {
   text-decoration-line: underline;
 }
 
-.full-info {
-}
-
 .navigation {
   margin-bottom: 40px;
 }
@@ -315,19 +315,20 @@ body {
   font-weight: 900;
 }
 
-.form-submit {
+.form-subscibe {
   width: 100%;
   display: flex;
+
+  margin-bottom: 48px;
 }
 
-.form-submit > input {
+.form-subscibe > input {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16px;
 
   width: 177px;
 
-  margin-bottom: 48px;
   padding: 12px 15px;
 
   color: #aeaeae;
@@ -337,14 +338,154 @@ body {
   border-radius: 5px 0 0 5px;
 }
 
-.form-submit > button {
+.form-subscibe > button {
   min-width: 43px;
-  height: 40px;
+  height: 41px;
 
   color: #ffffff;
   background-color: #ff8f27;
 
+  background-image: url(../img/check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+
   border: 0;
 
   border-radius: 0 5px 5px 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    /* max-width: 960px; */
+    /* padding: 0 20px; */
+  }
+
+  .menu-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    /* max-width: 740px; */
+    /* padding: 0 20px; */
+  }
+
+  .actors-list-items > a {
+    font-size: 14px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: start;
+    line-height: 2;
+  }
+
+  .menu-item {
+    flex-basis: 20%;
+    flex-grow: 1;
+  }
+
+  .full-content {
+    flex-wrap: wrap;
+  }
+
+  .content-aside {
+    margin: 40px auto;
+  }
+
+  .content-article p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    /* max-width: 560px; */
+    /* padding: 0 20px; */
+  }
+
+  .more {
+    display: none;
+  }
+
+  .menu-item {
+    flex-basis: 40%;
+  }
+}
+
+@media (max-width: 578px) {
+  .container {
+    padding: 0;
+  }
+
+  .header {
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .search {
+    flex-basis: 100%;
+
+    margin: 10px 0;
+
+    order: 2;
+  }
+
+  .user {
+    margin-right: 15px;
+  }
+
+  .info {
+    margin-bottom: 70px;
+  }
+
+  .movie-info {
+    flex-wrap: wrap;
+  }
+
+  .play {
+    margin-top: 20px;
+    flex-basis: 100%;
+  }
+
+  .pre-content-wrapper {
+    padding: 0 20px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+
+    margin-bottom: 0;
+    padding: 43px 22px;
+
+    border-radius: 0;
+  }
+
+  .short-info {
+    width: 100%;
+
+    margin-right: 0;
+  }
+
+  .poster {
+    width: 100%;
+    height: auto;
+  }
+
+  .button {
+    font-size: 20px;
+
+    width: 100%;
+    height: 60px;
+  }
+
+  .actors-title,
+  .actors-list {
+    display: none;
+  }
+
+  .menu-item {
+    flex-basis: 100%;
+  }
 }
