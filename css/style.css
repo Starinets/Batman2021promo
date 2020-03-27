@@ -330,6 +330,11 @@ body {
   margin: 0 0 23px 0;
 }
 
+figure h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
 .content-aside {
   width: 220px;
 
